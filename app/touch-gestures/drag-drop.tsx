@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
 import { Animated, PanResponder, View, StyleSheet, Text } from "react-native";
 
+/**
+ * Drag and drop can be implemented using PanResponder API. It's not so easy to use, 
+ * but it's achievable by using the react-native framework only.
+ */
 const DragDropCard = ({ content }: { content: string }) => {
     const position =
         useRef(new Animated.ValueXY()).current;

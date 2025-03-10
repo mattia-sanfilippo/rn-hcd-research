@@ -2,6 +2,9 @@ import { useRef } from "react";
 import { Animated, View } from "react-native";
 import { PinchGestureHandler } from "react-native-gesture-handler";
 
+/**
+ * Pinch to zoom can be achieved by using the react-native-gesture-handler library
+ */
 const PinchZoomScreen = () => {
     const scale = useRef(new Animated.Value(1)).current;
 

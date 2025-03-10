@@ -3,6 +3,10 @@ import { View, TextInput, Button, Text, StyleSheet } from "react-native";
 import { z } from "zod";
 import {zodResolver} from '@hookform/resolvers/zod';
 
+/*
+* Forms can be validated using external libraries like react-hook-form, as there isn't any ready to use API for React Native.
+*/
+
 const schema = z.object({
     email: z.string().email("Invalid email address"),
   });

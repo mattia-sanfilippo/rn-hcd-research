@@ -1,5 +1,8 @@
 import { StyleSheet, View, Text } from "react-native"
 
+/**
+ * Components are easy to customize by simply applying a stylesheet object to the them.
+ */
 const StylingFlexibilityScreen = () => {
     return (
         <View style={styles.container}>

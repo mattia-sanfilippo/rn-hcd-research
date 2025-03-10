@@ -1,6 +1,12 @@
 import { getLocales } from "expo-localization"
 import { View, Text } from "react-native";
 
+/*
+ * Values get successfully converted to the desired format. Using expo-localization, which is a library developed by the Expo framework,
+ * can be used to get the language tag of a language used by the user.
+ * The formatting is handled by Javascript's Intl class.
+ */
+
 const FormattingValuesScreen = () => {
     const localeInfo = getLocales()[0];
     const locale = localeInfo.languageTag;

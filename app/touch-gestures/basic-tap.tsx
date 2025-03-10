@@ -1,6 +1,10 @@
 import { Alert, Pressable, View, Text, StyleSheet } from "react-native"
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 
+/**
+ * Taps and long press are handled by react native, but the double tap is a bit tricky to implement.
+ * I decided to use react-native-gesture-handler (external dependency) to get a more stable support.
+ */
 const BasicTapScreen = () => {
 
     const doubleTap = Gesture.Tap().maxDuration(250).numberOfTaps(2).onStart(() => {

@@ -2,6 +2,11 @@ import { getLocales } from "expo-localization";
 import { useEffect, useState } from "react";
 import { Button, I18nManager, View, Text } from "react-native";
 
+/**
+ * RTL is supported by default on React Native, 
+ * but the I18nManager needs to call the forceRTL method to change language and direction while the app is running.
+ */
+
 const translations = {
     en: { greeting: "Hello", button: "Change to Arabic" },
     ar: { greeting: "مرحبا", button: "تغيير الى الانجليزية" },

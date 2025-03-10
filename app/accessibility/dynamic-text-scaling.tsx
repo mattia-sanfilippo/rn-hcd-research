@@ -1,7 +1,7 @@
 import { Button, Text, View } from "react-native";
 
 /*
-In React Native, the text scales with the device settings by default.
+In React Native, the text scales with the device settings by default. No additional work is required.
 */
 
 const DynamicTextScalingScreen = () => {

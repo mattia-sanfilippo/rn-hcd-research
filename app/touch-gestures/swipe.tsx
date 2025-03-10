@@ -1,9 +1,12 @@
 import { useRef } from "react"
 import { Animated, PanResponder, View, Text } from "react-native"
 
-const SwipeScreen = () => {
-    const pan = useRef(new Animated.ValueXY()).current;
+/**
+ * The swipe gesture is achievable by using the PanResponder API
+ */
 
+const SwipeScreen = () => {
+  const pan = useRef(new Animated.ValueXY()).current;
   const panResponder = useRef(
     PanResponder.create({
       onMoveShouldSetPanResponder: () => true,

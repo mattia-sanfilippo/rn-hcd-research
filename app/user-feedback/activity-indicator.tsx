@@ -1,5 +1,9 @@
 import { ActivityIndicator, View, StyleSheet } from "react-native"
 
+/**
+ * React native provides the native iOS/Android activity indicator.
+ */
+
 const ActivityIndicatorScreen = () => {
     return (
         <View style={styles.container}>

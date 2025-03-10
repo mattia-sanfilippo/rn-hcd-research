@@ -2,6 +2,7 @@ import { Button, Text, View } from "react-native";
 
 /*
 The accessibilityRole prop is used to specify the role of the element, which can be used by screen readers to provide more context to the user.
+the role is available for all the Views with the accessibilityRole prop.
 */
 
 const SemanticElementsScreen = () => {
